@@ -14,4 +14,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  vivado-2020_1 = pkgs.callPackage ./pkgs/vivado/vivado-2020_1.nix { };
+  vivado-2022_2 = pkgs.callPackage ./pkgs/vivado/vivado-2022_2.nix { };
 }
